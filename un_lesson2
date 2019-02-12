@@ -1,0 +1,46 @@
+
+public class Object {
+    public static void main(String[] args){
+        Present tang = new Present ();
+	tang.id = 1;
+	tang.name = "Мандарин";
+	tang.weihgt = 200;
+	tang.cost = 190;
+        tang.list();
+        Present champ = new Present ();
+	champ.id = 2;
+	champ.thing = "Шампанское";
+	champ.weihgt = 250;
+	champ.cost = 399;
+        
+	Present konf = new Present ();
+	konf.id = 3;
+	konf.thing = "Конфетти";
+	konf.weihgt = 15;
+	konf.cost = 50;
+	
+	Present cook = new Present ();
+	cook.id = 4;
+	cook.thing = "Печенье";
+	cook.weihgt = 85;
+	cook.cost = 150;
+	
+	Present sweet = new Present ();
+	sweet.id = 5;
+	sweet.thing = "Конфеты";
+	sweet.weihgt = 99;
+	sweet.cost = 100;        
+    }
+    
+    class Data{
+        String thing;
+        int id, weihgt, cost;
+        String name;
+           
+        void list(){
+            System.out.println("\tID\tНазвание\tВес\tЦена");
+            //System.out.printf("\t%d\t%s\t%d\t%d\n", 1d, name, weihgt, cost);
+            System.out.println(id+"\t"+name+"\t"+weihgt+"\t"+cost);
+        }
+    }
+}
